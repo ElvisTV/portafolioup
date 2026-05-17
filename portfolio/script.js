@@ -6,13 +6,15 @@
 
   const translations = {
     en: {
-      metaTitle: "Elvis Tezen Villanueva | Data Engineer & Software Developer",
+      metaTitle: "Elvis Tezen | Data Engineer & Software Developer",
       metaDescription:
-        "Professional portfolio of Elvis Tezen Villanueva, Data Engineer and Software Developer specialized in Python, SQL/PLSQL, Azure, Oracle, .NET and Angular.",
+        "Professional portfolio of Elvis Tezen, Data Engineer and Software Developer specialized in Python, SQL/PLSQL, Azure, Oracle, .NET and Angular.",
       ogDescription: "Data engineering, automation, enterprise backend and scalable solutions on Azure, Oracle and .NET.",
       skipLink: "Skip to content",
       navAria: "Primary navigation",
       brandAria: "Go to home",
+      navIconAria: "Go to technology stack",
+      navIconAlt: "Developer coding icon",
       menuToggle: "Open menu",
       languageToggleLabel: "Switch language to Spanish",
       navHome: "Home",
@@ -116,13 +118,15 @@
       backTop: "Back to top"
     },
     es: {
-      metaTitle: "Elvis Tezen Villanueva | Data Engineer & Software Developer",
+      metaTitle: "Elvis Tezen | Data Engineer & Software Developer",
       metaDescription:
-        "Portfolio profesional de Elvis Tezen Villanueva, Data Engineer y Software Developer especializado en Python, SQL/PLSQL, Azure, Oracle, .NET y Angular.",
+        "Portfolio profesional de Elvis Tezen, Data Engineer y Software Developer especializado en Python, SQL/PLSQL, Azure, Oracle, .NET y Angular.",
       ogDescription: "Ingeniería de datos, automatización, backend empresarial y soluciones escalables sobre Azure, Oracle y .NET.",
       skipLink: "Saltar al contenido",
       navAria: "Navegación principal",
       brandAria: "Ir al inicio",
+      navIconAria: "Ir al stack tecnológico",
+      navIconAlt: "Ícono de programador escribiendo código",
       menuToggle: "Abrir menú",
       languageToggleLabel: "Cambiar idioma a inglés",
       navHome: "Inicio",

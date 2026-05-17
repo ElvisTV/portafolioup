@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title desc">
+  <title id="title">Developer icon</title>
+  <desc id="desc">A stylized developer with hoodie and laptop over neon code lines.</desc>
+  <defs>
+    <linearGradient id="hood" x1="56" y1="32" x2="176" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#89a7aa"/>
+      <stop offset="0.54" stop-color="#33436e"/>
+      <stop offset="1" stop-color="#10104e"/>
+    </linearGradient>
+    <linearGradient id="face" x1="94" y1="72" x2="140" y2="135" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffc392"/>
+      <stop offset="1" stop-color="#f2b77b"/>
+    </linearGradient>
+    <linearGradient id="laptop" x1="73" y1="115" x2="178" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d7e7f5"/>
+      <stop offset="1" stop-color="#8993c9"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="240" height="180" fill="none"/>
+  <circle cx="120" cy="74" r="67" fill="#3a2c44"/>
+  <g filter="url(#glow)" fill="none" stroke="#52ff45" stroke-width="5.4" stroke-linecap="round">
+    <path d="M58 52h22M96 52h70M181 52h22"/>
+    <path d="M58 66h10M86 66h84M184 66h18"/>
+    <path d="M58 80h55M128 80h75"/>
+    <path d="M58 94h12M84 94h82M183 94h20"/>
+    <path d="M58 108h74M151 108h52"/>
+  </g>
+  <path d="M56 160c9-29 27-42 64-42 38 0 58 14 66 42" fill="#536a77" stroke="#05038b" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M78 107c-9-43 17-74 42-75 25 1 51 31 42 75-8-14-15-37-42-37-27 0-34 23-42 37Z" fill="url(#hood)" stroke="#05038b" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M91 67c9-19 22-29 39-28 20 8 28 23 30 43-14-13-32-18-52-14-8 1-13 1-17-1Z" fill="#b74256" stroke="#05038b" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M85 93c0-21 13-35 35-35s35 14 35 35c0 26-15 45-35 45S85 119 85 93Z" fill="url(#face)" stroke="#05038b" stroke-width="6"/>
+  <path d="M83 94c-10-1-15 6-13 16 1 9 8 15 17 13" fill="#ffc392" stroke="#05038b" stroke-width="6"/>
+  <path d="M157 94c10-1 15 6 13 16-1 9-8 15-17 13" fill="#ffc392" stroke="#05038b" stroke-width="6"/>
+  <circle cx="105" cy="101" r="5" fill="#05038b"/>
+  <circle cx="135" cy="101" r="5" fill="#05038b"/>
+  <path d="M106 124c9 8 20 8 29 0" fill="none" stroke="#05038b" stroke-width="4.2" stroke-linecap="round"/>
+  <rect x="70" y="126" width="100" height="46" rx="8" fill="url(#laptop)" stroke="#05038b" stroke-width="7"/>
+  <path d="M70 168h100l10 10H60l10-10Z" fill="#c8d6e4" stroke="#05038b" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="120" cy="149" r="13" fill="#fff" stroke="#05038b" stroke-width="5"/>
+  <circle cx="114" cy="149" r="3.4" fill="#05038b"/>
+  <circle cx="126" cy="149" r="3.4" fill="#05038b"/>
+  <path d="M116 161h8" stroke="#05038b" stroke-width="4" stroke-linecap="round"/>
+</svg>
