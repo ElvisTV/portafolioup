@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio profesional de Elvis Tezen Villanueva, Data Engineer y Software Developer especializado en Python, SQL/PLSQL, Azure, Oracle, .NET y Angular."
+      data-i18n-content="metaDescription"
+      content="Professional portfolio of Elvis Tezen Villanueva, Data Engineer and Software Developer specialized in Python, SQL/PLSQL, Azure, Oracle, .NET and Angular."
     />
     <meta name="author" content="Elvis Tezen Villanueva" />
-    <meta property="og:title" content="Elvis Tezen Villanueva | Data Engineer & Software Developer" />
+    <meta property="og:title" data-i18n-content="metaTitle" content="Elvis Tezen Villanueva | Data Engineer & Software Developer" />
     <meta
       property="og:description"
-      content="Ingeniería de datos, automatización, backend empresarial y soluciones escalables sobre Azure, Oracle y .NET."
+      data-i18n-content="ogDescription"
+      content="Data engineering, automation, enterprise backend and scalable solutions on Azure, Oracle and .NET."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/mi-foto.jpg" />
@@ -20,30 +22,44 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido" data-i18n="skipLink">Skip to content</a>
     <canvas id="networkCanvas" aria-hidden="true"></canvas>
     <div class="cursor-light" aria-hidden="true"></div>
 
     <header class="site-header" id="top">
-      <nav class="nav shell" aria-label="Navegación principal">
-        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <nav class="nav shell" aria-label="Primary navigation" data-i18n-aria="navAria">
+        <a class="brand" href="#inicio" aria-label="Go to home" data-i18n-aria="brandAria">
           <span class="brand__mark">ET</span>
           <span class="brand__text">Elvis Tezen</span>
         </a>
 
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">
-          <span></span>
-          <span></span>
-        </button>
+        <div class="nav-controls">
+          <div class="nav-menu" id="navMenu">
+            <a class="nav-link is-active" href="#inicio" data-i18n="navHome">Home</a>
+            <a class="nav-link" href="#perfil" data-i18n="navProfile">Profile</a>
+            <a class="nav-link" href="#stack" data-i18n="navStack">Stack</a>
+            <a class="nav-link" href="#experiencia" data-i18n="navExperience">Experience</a>
+            <a class="nav-link" href="#proyectos" data-i18n="navProjects">Projects</a>
+            <a class="nav-link" href="#formacion" data-i18n="navEducation">Education</a>
+            <a class="nav-link" href="#contacto" data-i18n="navContact">Contact</a>
+          </div>
 
-        <div class="nav-menu" id="navMenu">
-          <a class="nav-link is-active" href="#inicio">Inicio</a>
-          <a class="nav-link" href="#perfil">Perfil</a>
-          <a class="nav-link" href="#stack">Stack</a>
-          <a class="nav-link" href="#experiencia">Experiencia</a>
-          <a class="nav-link" href="#proyectos">Proyectos</a>
-          <a class="nav-link" href="#formacion">Formación</a>
-          <a class="nav-link" href="#contacto">Contacto</a>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            type="button"
+            aria-label="Switch language to Spanish"
+            title="Switch language to Spanish"
+          >
+            <span class="language-toggle__current" data-lang-current>EN</span>
+            <span class="language-toggle__divider" aria-hidden="true">/</span>
+            <span class="language-toggle__next" data-lang-next>ES</span>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu" data-i18n-aria="menuToggle">
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </nav>
     </header>
@@ -52,18 +68,18 @@
       <section class="hero section" id="inicio" aria-labelledby="hero-title">
         <div class="hero__grid shell">
           <div class="hero__content is-visible" data-reveal>
-            <p class="eyebrow">Data Engineer / Software Developer</p>
-            <h1 id="hero-title">Elvis Tezen Villanueva</h1>
-            <p class="hero__role">Data Engineer | Python, SQL/PLSQL y Azure</p>
-            <p class="hero__lead">
-              Desarrollo soluciones de datos y software para entornos empresariales exigentes, combinando automatización,
-              backend .NET/C#, bases de datos relacionales y despliegues orientados a calidad, consistencia y escalabilidad.
+            <p class="eyebrow" data-i18n="heroEyebrow">Data Engineer / Software Developer</p>
+            <h1 id="hero-title">Elvis Tezen</h1>
+            <p class="hero__role" data-i18n="heroRole">Data Engineer | Python, SQL/PLSQL and Azure</p>
+            <p class="hero__lead" data-i18n="heroLead">
+              I build data and software solutions for demanding enterprise environments, combining automation, .NET/C#
+              backend, relational databases and deployments focused on quality, consistency and scalability.
             </p>
 
-            <div class="hero__actions" aria-label="Acciones principales">
+            <div class="hero__actions" aria-label="Primary actions" data-i18n-aria="heroActionsAria">
               <a class="btn btn--primary magnetic" href="mailto:elvistezenv@gmail.com">
-                Contactarme
-                <span aria-hidden="true">→</span>
+                <span data-i18n="btnContact">Contact me</span>
+                <span aria-hidden="true">&rarr;</span>
               </a>
               <a
                 class="btn btn--ghost magnetic"
@@ -72,15 +88,15 @@
                 rel="noopener noreferrer"
               >
                 LinkedIn
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">&nearr;</span>
               </a>
               <a class="btn btn--quiet magnetic" href="assets/cv-data-engineer.pdf" download>
-                Descargar CV
-                <span aria-hidden="true">↓</span>
+                <span data-i18n="btnDownload">Download CV</span>
+                <span aria-hidden="true">&darr;</span>
               </a>
             </div>
 
-            <div class="hero__chips" aria-label="Tecnologías principales">
+            <div class="hero__chips" aria-label="Core technologies" data-i18n-aria="heroChipsAria">
               <span>Python</span>
               <span>SQL/PLSQL</span>
               <span>Azure Data Factory</span>
@@ -90,12 +106,12 @@
             </div>
           </div>
 
-          <aside class="hero__portrait is-visible" aria-label="Foto y datos de contacto" data-reveal>
+          <aside class="hero__portrait is-visible" aria-label="Photo and contact details" data-i18n-aria="portraitAria" data-reveal>
             <div class="portrait-frame tilt-card">
-              <img src="assets/mi-foto.jpg" alt="Retrato profesional de Elvis Tezen Villanueva" />
+              <img src="assets/mi-foto.jpg" alt="Professional portrait of Elvis Tezen Villanueva" data-i18n-alt="portraitAlt" />
             </div>
             <div class="identity-panel">
-              <span>Lima, Perú</span>
+              <span data-i18n="location">Lima, Peru</span>
               <a href="tel:+51965622865">965 622 865</a>
               <a href="mailto:elvistezenv@gmail.com">elvistezenv@gmail.com</a>
             </div>
@@ -103,23 +119,23 @@
         </div>
       </section>
 
-      <section class="signal-band" aria-label="Resumen profesional destacado">
+      <section class="signal-band" aria-label="Professional highlights" data-i18n-aria="signalAria">
         <div class="signal-band__inner shell">
           <article data-reveal>
-            <span>Banca y seguros</span>
-            <strong>Experiencia en sectores críticos</strong>
+            <span data-i18n="signalBankLabel">Banking and insurance</span>
+            <strong data-i18n="signalBankText">Experience in critical sectors</strong>
           </article>
           <article data-reveal>
-            <span>Datos</span>
-            <strong>Extracción, validación y reporting</strong>
+            <span data-i18n="signalDataLabel">Data</span>
+            <strong data-i18n="signalDataText">Extraction, validation and reporting</strong>
           </article>
           <article data-reveal>
             <span>Backend</span>
-            <strong>.NET/C#, Oracle y SQL/PLSQL</strong>
+            <strong data-i18n="signalBackendText">.NET/C#, Oracle and SQL/PLSQL</strong>
           </article>
           <article data-reveal>
             <span>Cloud</span>
-            <strong>Azure y Azure Data Factory</strong>
+            <strong data-i18n="signalCloudText">Azure and Azure Data Factory</strong>
           </article>
         </div>
       </section>
@@ -127,37 +143,36 @@
       <section class="section about" id="perfil" aria-labelledby="perfil-title">
         <div class="shell two-column">
           <div class="section-heading" data-reveal>
-            <p class="eyebrow">Perfil profesional</p>
-            <h2 id="perfil-title">Ingeniería de datos con criterio de producto</h2>
+            <p class="eyebrow" data-i18n="profileEyebrow">Professional profile</p>
+            <h2 id="perfil-title" data-i18n="profileTitle">Data engineering with product judgment</h2>
           </div>
 
           <div class="about__body" data-reveal>
-            <p>
-              Soy Data Engineer y Software Developer orientado a la extracción, validación, procesamiento y análisis de
-              información sobre motores SQL. He participado en proyectos para banca y seguros, desarrollando scripts,
-              mejorando procesos backend y trabajando con soluciones escalables sobre .NET, Oracle, Azure y bases de datos
-              relacionales.
+            <p data-i18n="profileTextOne">
+              I am a Data Engineer and Software Developer focused on extracting, validating, processing and analyzing
+              information on SQL engines. I have worked on banking and insurance projects, building scripts, improving
+              backend processes and working with scalable solutions on .NET, Oracle, Azure and relational databases.
             </p>
-            <p>
-              Mi perfil combina desarrollo, automatización y foco en datos: traduzco procesos técnicos en soluciones
-              mantenibles, consistentes y preparadas para operar en contextos empresariales.
+            <p data-i18n="profileTextTwo">
+              My profile combines development, automation and data focus: I translate technical processes into
+              maintainable, consistent solutions prepared to operate in enterprise contexts.
             </p>
 
             <div class="value-grid">
               <article class="value-card tilt-card">
                 <span>01</span>
-                <h3>Datos confiables</h3>
-                <p>Extracción, validación, tratamiento de información, consultas y optimización sobre bases relacionales.</p>
+                <h3 data-i18n="valueOneTitle">Reliable data</h3>
+                <p data-i18n="valueOneText">Extraction, validation, information treatment, queries and optimization over relational databases.</p>
               </article>
               <article class="value-card tilt-card">
                 <span>02</span>
-                <h3>Backend empresarial</h3>
-                <p>Soluciones .NET/C# integradas con Oracle, SQL/PLSQL y reglas de negocio sobre flujos transaccionales.</p>
+                <h3 data-i18n="valueTwoTitle">Enterprise backend</h3>
+                <p data-i18n="valueTwoText">.NET/C# solutions integrated with Oracle, SQL/PLSQL and business rules on transactional flows.</p>
               </article>
               <article class="value-card tilt-card">
                 <span>03</span>
-                <h3>Automatización</h3>
-                <p>Scripts, reporting, procesos técnicos y servicios para reducir trabajo manual y elevar consistencia.</p>
+                <h3 data-i18n="valueThreeTitle">Automation</h3>
+                <p data-i18n="valueThreeText">Scripts, reporting, technical processes and services that reduce manual work and improve consistency.</p>
               </article>
             </div>
           </div>
@@ -167,17 +182,16 @@
       <section class="section stack" id="stack" aria-labelledby="stack-title">
         <div class="shell">
           <div class="section-heading section-heading--center" data-reveal>
-            <p class="eyebrow">Stack tecnológico</p>
-            <h2 id="stack-title">Tecnologías reales de mi experiencia</h2>
-            <p>
-              Herramientas y plataformas consolidadas desde proyectos de datos, backend, cloud, frontend y aplicaciones
-              móviles.
+            <p class="eyebrow" data-i18n="stackEyebrow">Technology stack</p>
+            <h2 id="stack-title" data-i18n="stackTitle">Real technologies from my experience</h2>
+            <p data-i18n="stackIntro">
+              Tools and platforms consolidated through data, backend, cloud, frontend and mobile application projects.
             </p>
           </div>
 
           <div class="stack-grid">
             <article class="stack-card tilt-card" data-reveal>
-              <h3>Lenguajes y scripting</h3>
+              <h3 data-i18n="stackLanguages">Languages and scripting</h3>
               <div class="chip-list">
                 <span>Python</span>
                 <span>SQL</span>
@@ -192,21 +206,21 @@
             </article>
 
             <article class="stack-card tilt-card" data-reveal>
-              <h3>Datos e ingeniería</h3>
+              <h3 data-i18n="stackDataTitle">Data and engineering</h3>
               <div class="chip-list">
-                <span>Extracción de datos</span>
-                <span>Validación de datos</span>
-                <span>Automatización</span>
+                <span data-i18n="chipExtraction">Data extraction</span>
+                <span data-i18n="chipValidation">Data validation</span>
+                <span data-i18n="chipAutomation">Automation</span>
                 <span>Web scraping</span>
                 <span>Reporting</span>
-                <span>Tratamiento de información</span>
-                <span>Optimización SQL</span>
-                <span>Bases relacionales</span>
+                <span data-i18n="chipTreatment">Information treatment</span>
+                <span data-i18n="chipSqlOptimization">SQL optimization</span>
+                <span data-i18n="chipRelational">Relational databases</span>
               </div>
             </article>
 
             <article class="stack-card tilt-card" data-reveal>
-              <h3>Cloud y plataforma</h3>
+              <h3 data-i18n="stackCloudTitle">Cloud and platform</h3>
               <div class="chip-list">
                 <span>Azure</span>
                 <span>Azure Data Factory</span>
@@ -225,7 +239,7 @@
             </article>
 
             <article class="stack-card tilt-card" data-reveal>
-              <h3>Herramientas</h3>
+              <h3 data-i18n="stackToolsTitle">Tools</h3>
               <div class="chip-list">
                 <span>Git</span>
                 <span>Visual Studio</span>
@@ -241,23 +255,23 @@
       <section class="section experience" id="experiencia" aria-labelledby="experiencia-title">
         <div class="shell">
           <div class="section-heading" data-reveal>
-            <p class="eyebrow">Experiencia profesional</p>
-            <h2 id="experiencia-title">Trabajo aplicado en banca, seguros y software empresarial</h2>
+            <p class="eyebrow" data-i18n="experienceEyebrow">Professional experience</p>
+            <h2 id="experiencia-title" data-i18n="experienceTitle">Applied work in banking, insurance and enterprise software</h2>
           </div>
 
-          <div class="timeline" aria-label="Línea de tiempo profesional">
+          <div class="timeline" aria-label="Professional timeline" data-i18n-aria="timelineAria">
             <article class="timeline-card tilt-card" data-reveal>
               <div class="timeline-card__meta">
                 <span>01/2026 - 03/2026</span>
                 <strong>Materia Gris</strong>
               </div>
               <div class="timeline-card__body">
-                <h3>Analista Programador</h3>
+                <h3 data-i18n="materiaRole">Programmer Analyst</h3>
                 <ul>
-                  <li>Actualicé librerías de acceso a datos en backend .NET/C# integradas con Oracle.</li>
-                  <li>Atendí incidentes del producto SCTR con SQL/PLSQL, Oracle y validaciones de negocio.</li>
-                  <li>Optimicé procesos y controladores backend para mejorar respuesta, mantenibilidad y consistencia.</li>
-                  <li>Lideré la etapa inicial de migración frontend hacia Angular 21 con JavaScript/TypeScript.</li>
+                  <li data-i18n="materiaBulletOne">Updated data access libraries in .NET/C# backend integrated with Oracle.</li>
+                  <li data-i18n="materiaBulletTwo">Handled SCTR product incidents with SQL/PLSQL, Oracle and business validations.</li>
+                  <li data-i18n="materiaBulletThree">Optimized backend processes and controllers to improve response time, maintainability and consistency.</li>
+                  <li data-i18n="materiaBulletFour">Led the initial frontend migration stage toward Angular 21 with JavaScript/TypeScript.</li>
                 </ul>
               </div>
             </article>
@@ -265,16 +279,16 @@
             <article class="timeline-card tilt-card" data-reveal>
               <div class="timeline-card__meta">
                 <span>2021 - 2025</span>
-                <strong>Softtek Perú</strong>
+                <strong data-i18n="softtekCompany">Softtek Peru</strong>
               </div>
               <div class="timeline-card__body">
                 <h3>Software Developer</h3>
                 <ul>
-                  <li>Realicé extracción, carga y validación de información con SQL/PLSQL y Oracle.</li>
-                  <li>Desarrollé scripts de análisis y reporting con Python y SQL para seguimiento operativo.</li>
-                  <li>Mantuve soluciones empresariales sobre .NET/C# con automatización y lógica de negocio.</li>
-                  <li>Participé en soluciones para Banco Santander Perú con Azure y componentes Angular/JavaScript.</li>
-                  <li>Desarrollé apps móviles para Autoplan con Dart/Flutter y un servicio Windows en .NET/C#.</li>
+                  <li data-i18n="softtekBulletOne">Performed extraction, loading and validation of information with SQL/PLSQL and Oracle.</li>
+                  <li data-i18n="softtekBulletTwo">Developed analysis and reporting scripts with Python and SQL for operational tracking.</li>
+                  <li data-i18n="softtekBulletThree">Maintained enterprise solutions on .NET/C# with automation and business logic.</li>
+                  <li data-i18n="softtekBulletFour">Participated in solutions for Banco Santander Peru with Azure and Angular/JavaScript components.</li>
+                  <li data-i18n="softtekBulletFive">Developed mobile apps for Autoplan with Dart/Flutter and a Windows service in .NET/C#.</li>
                 </ul>
               </div>
             </article>
@@ -282,14 +296,14 @@
             <article class="timeline-card tilt-card" data-reveal>
               <div class="timeline-card__meta">
                 <span>2020</span>
-                <strong>Oficina de Convenios UNPRG</strong>
+                <strong data-i18n="unprgOffice">UNPRG Agreements Office</strong>
               </div>
               <div class="timeline-card__body">
-                <h3>Programador</h3>
+                <h3 data-i18n="unprgRole">Programmer</h3>
                 <ul>
-                  <li>Organicé solicitudes de convenios de la Universidad Nacional Pedro Ruiz Gallo.</li>
-                  <li>Analicé requerimientos e historias de usuario para soluciones de divulgación institucional.</li>
-                  <li>Propuse soluciones para exponer convenios internacionales de la universidad.</li>
+                  <li data-i18n="unprgBulletOne">Organized agreement requests for Universidad Nacional Pedro Ruiz Gallo.</li>
+                  <li data-i18n="unprgBulletTwo">Analyzed requirements and user stories for institutional communication solutions.</li>
+                  <li data-i18n="unprgBulletThree">Proposed solutions to expose the university's international agreements.</li>
                 </ul>
               </div>
             </article>
@@ -300,54 +314,54 @@
       <section class="section projects" id="proyectos" aria-labelledby="proyectos-title">
         <div class="shell">
           <div class="section-heading section-heading--center" data-reveal>
-            <p class="eyebrow">Proyectos y especialidades</p>
-            <h2 id="proyectos-title">Bloques de valor construidos desde experiencia real</h2>
+            <p class="eyebrow" data-i18n="projectsEyebrow">Projects and specialties</p>
+            <h2 id="proyectos-title" data-i18n="projectsTitle">Value blocks built from real experience</h2>
           </div>
 
           <div class="project-grid">
             <article class="project-card tilt-card" data-reveal>
-              <span>Especialidad</span>
-              <h3>Ingeniería de datos y reporting</h3>
-              <p>Extracción, validación, análisis, scripting, reporting y tratamiento de información para operación técnica.</p>
+              <span data-i18n="specialtyLabel">Specialty</span>
+              <h3 data-i18n="projectOneTitle">Data engineering and reporting</h3>
+              <p data-i18n="projectOneText">Extraction, validation, analysis, scripting, reporting and information treatment for technical operations.</p>
             </article>
             <article class="project-card tilt-card" data-reveal>
-              <span>Especialidad</span>
+              <span data-i18n="specialtyLabel">Specialty</span>
               <h3>Backend .NET/C# + Oracle</h3>
-              <p>Controladores, procesos backend, SQL/PLSQL, estabilidad de consultas y lógica de negocio empresarial.</p>
+              <p data-i18n="projectTwoText">Controllers, backend processes, SQL/PLSQL, query stability and enterprise business logic.</p>
             </article>
             <article class="project-card tilt-card" data-reveal>
-              <span>Especialidad</span>
+              <span data-i18n="specialtyLabel">Specialty</span>
               <h3>Azure Data Factory</h3>
-              <p>Pipelines, triggers, activities, linked services, datasets, data flows e Integration Runtime.</p>
+              <p data-i18n="projectThreeText">Pipelines, triggers, activities, linked services, datasets, data flows and Integration Runtime.</p>
             </article>
             <article class="project-card tilt-card" data-reveal>
-              <span>Especialidad</span>
-              <h3>Frontend moderno</h3>
-              <p>Trabajo con Angular, JavaScript y TypeScript para migraciones y componentes web sostenibles.</p>
+              <span data-i18n="specialtyLabel">Specialty</span>
+              <h3 data-i18n="projectFourTitle">Modern frontend</h3>
+              <p data-i18n="projectFourText">Work with Angular, JavaScript and TypeScript for migrations and sustainable web components.</p>
             </article>
           </div>
 
           <div class="apps-panel" data-reveal>
             <div>
-              <p class="eyebrow">Apps registradas en CV</p>
-              <h3>Aplicaciones móviles</h3>
+              <p class="eyebrow" data-i18n="appsEyebrow">Apps listed in CV</p>
+              <h3 data-i18n="appsTitle">Mobile applications</h3>
             </div>
             <div class="apps-list">
               <article>
                 <strong>Filosofando</strong>
-                <span>App de frases filosóficas | 2022 | Play Store</span>
+                <span data-i18n="appOne">Philosophical quotes app | 2022 | Play Store</span>
               </article>
               <article>
                 <strong>PelisHoy</strong>
-                <span>App de cartelera de películas | 2023 | Play Store</span>
+                <span data-i18n="appTwo">Movie listings app | 2023 | Play Store</span>
               </article>
               <article>
                 <strong>Convenios UNPRG</strong>
-                <span>App de convenios universitarios | 2021 | No publicada por permisos</span>
+                <span data-i18n="appThree">University agreements app | 2021 | Not published due to permissions</span>
               </article>
               <article>
                 <strong>ChatbotElvis</strong>
-                <span>App clon de ChatGPT | 2023 | No publicada</span>
+                <span data-i18n="appFour">ChatGPT clone app | 2023 | Not published</span>
               </article>
             </div>
           </div>
@@ -357,25 +371,25 @@
       <section class="section education" id="formacion" aria-labelledby="formacion-title">
         <div class="shell two-column">
           <div class="section-heading" data-reveal>
-            <p class="eyebrow">Formación</p>
-            <h2 id="formacion-title">Base académica y aprendizaje aplicado</h2>
+            <p class="eyebrow" data-i18n="educationEyebrow">Education</p>
+            <h2 id="formacion-title" data-i18n="educationTitle">Academic foundation and applied learning</h2>
           </div>
 
           <div class="education-grid">
             <article class="education-card tilt-card" data-reveal>
               <span>2017 - 2021</span>
-              <h3>Bachiller en Ingeniería en Computación e Informática</h3>
-              <p>Universidad Nacional Pedro Ruiz Gallo, Lambayeque.</p>
+              <h3 data-i18n="educationOneTitle">Bachelor's Degree in Computer and Information Engineering</h3>
+              <p data-i18n="educationOneText">Universidad Nacional Pedro Ruiz Gallo, Lambayeque.</p>
             </article>
             <article class="education-card tilt-card" data-reveal>
               <span>2021</span>
-              <h3>Microservicios en .NET 6 y Azure</h3>
+              <h3 data-i18n="educationTwoTitle">Microservices in .NET 6 and Azure</h3>
               <p>Aforo255 Training Center.</p>
             </article>
             <article class="education-card tilt-card" data-reveal>
-              <span>Idiomas</span>
-              <h3>Español nativo e inglés avanzado</h3>
-              <p>Comunicación técnica y colaboración en contextos profesionales.</p>
+              <span data-i18n="languagesLabel">Languages</span>
+              <h3 data-i18n="educationThreeTitle">Native Spanish and advanced English</h3>
+              <p data-i18n="educationThreeText">Technical communication and collaboration in professional contexts.</p>
             </article>
           </div>
         </div>
@@ -384,21 +398,21 @@
       <section class="section contact" id="contacto" aria-labelledby="contacto-title">
         <div class="shell contact__layout">
           <div class="section-heading" data-reveal>
-            <p class="eyebrow">Contacto</p>
-            <h2 id="contacto-title">Construyamos soluciones con datos, backend y automatización</h2>
-            <p>
-              Estoy listo para conversar sobre oportunidades donde pueda aportar experiencia en SQL/PLSQL, Python,
-              Azure, Oracle, .NET y desarrollo de software empresarial.
+            <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+            <h2 id="contacto-title" data-i18n="contactTitle">Let's build solutions with data, backend and automation</h2>
+            <p data-i18n="contactIntro">
+              I am ready to discuss opportunities where I can contribute experience in SQL/PLSQL, Python, Azure, Oracle,
+              .NET and enterprise software development.
             </p>
           </div>
 
           <div class="contact-card tilt-card" data-reveal>
             <a href="tel:+51965622865">
-              <span>Teléfono</span>
+              <span data-i18n="phoneLabel">Phone</span>
               <strong>965 622 865</strong>
             </a>
             <a href="mailto:elvistezenv@gmail.com">
-              <span>Correo</span>
+              <span data-i18n="emailLabel">Email</span>
               <strong>elvistezenv@gmail.com</strong>
             </a>
             <a href="https://linkedin.com/in/elvistezen/" target="_blank" rel="noopener noreferrer">
@@ -406,8 +420,8 @@
               <strong>linkedin.com/in/elvistezen/</strong>
             </a>
             <div class="contact-card__actions">
-              <a class="btn btn--primary magnetic" href="assets/cv-data-engineer.pdf" download>CV Data Engineer</a>
-              <a class="btn btn--ghost magnetic" href="assets/cv-analista-programador.pdf" download>CV Analista</a>
+              <a class="btn btn--primary magnetic" href="assets/cv-data-engineer.pdf" download data-i18n="cvData">Data Engineer CV</a>
+              <a class="btn btn--ghost magnetic" href="assets/cv-analista-programador.pdf" download data-i18n="cvAnalyst">Programmer Analyst CV</a>
             </div>
           </div>
         </div>
@@ -416,8 +430,8 @@
 
     <footer class="site-footer">
       <div class="shell">
-        <p>© <span id="year"></span> Elvis Tezen Villanueva. Software, datos y automatización con precisión profesional.</p>
-        <a href="#inicio">Volver arriba</a>
+        <p>&copy; <span id="year"></span> Elvis Tezen Villanueva. <span data-i18n="footerText">Software, data and automation with professional precision.</span></p>
+        <a href="#inicio" data-i18n="backTop">Back to top</a>
       </div>
     </footer>
 
