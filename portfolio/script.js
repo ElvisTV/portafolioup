@@ -28,7 +28,6 @@
         "I build data and software solutions for demanding enterprise environments, combining automation, .NET/C# backend, relational databases and deployments focused on quality, consistency and scalability.",
       heroActionsAria: "Primary actions",
       btnContact: "Contact me",
-      btnDownload: "Download CV",
       heroChipsAria: "Core technologies",
       portraitAria: "Photo and contact details",
       portraitAlt: "Professional portrait of Elvis Tezen Villanueva",
@@ -113,8 +112,6 @@
         "I am ready to discuss opportunities where I can contribute experience in SQL/PLSQL, Python, Azure, Oracle, .NET and enterprise software development.",
       phoneLabel: "Phone",
       emailLabel: "Email",
-      cvData: "Data Engineer CV",
-      cvAnalyst: "Programmer Analyst CV",
       footerText: "Software, data and automation with professional precision.",
       backTop: "Back to top"
     },
@@ -141,7 +138,6 @@
         "Desarrollo soluciones de datos y software para entornos empresariales exigentes, combinando automatización, backend .NET/C#, bases de datos relacionales y despliegues orientados a calidad, consistencia y escalabilidad.",
       heroActionsAria: "Acciones principales",
       btnContact: "Contactarme",
-      btnDownload: "Descargar CV",
       heroChipsAria: "Tecnologías principales",
       portraitAria: "Foto y datos de contacto",
       portraitAlt: "Retrato profesional de Elvis Tezen Villanueva",
@@ -226,8 +222,6 @@
         "Estoy listo para conversar sobre oportunidades donde pueda aportar experiencia en SQL/PLSQL, Python, Azure, Oracle, .NET y desarrollo de software empresarial.",
       phoneLabel: "Teléfono",
       emailLabel: "Correo",
-      cvData: "CV Data Engineer",
-      cvAnalyst: "CV Analista Programador",
       footerText: "Software, datos y automatización con precisión profesional.",
       backTop: "Volver arriba"
     }
